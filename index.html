@@ -10,13 +10,28 @@
 <body>
     <h2 class="title">Pronoun Tester</h2>
 
-    <form>
+    <form class="user-info-form">
+        <div class="question">
+        <label for="name">Insert Your Name</label>
         <input type="text" id="name">
         <button type="button" onclick="submitName()">Submit name</button>
+        </div>
+
+        <div class="question">
+        <label for="pronouns">Select Your Pronoun(s)</label>
+        <select id="pronouns">
+            <option value="They/Them" selected>They/Them</option>
+            <option value="He/Him" >He/Him</option>
+            <option value="She/Her" >She/Her</option>
+            <!--yo btw future ro dont forget to add more-->
+        </select>
+        <button type="button" onclick="submitPronouns()">Add Pronouns</button>
+        </div>
     </form>
 
     <div class="user-info">
         <h3>Name: <span id="user-name">Blank</span></h3>
+        <h3>Pronouns: <span id="user-pronouns">Blank</span></h3>
     </div>
 
     <footer>

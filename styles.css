@@ -1,9 +1,27 @@
+body {
+    font-family: monospace;
+}
+
 .title {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
     position: absolute;
     bottom: 1%;
+}
+
+.user-info-form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info-form input, .user-info-form select {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+#user-pronouns {
+    word-wrap: break-word;
 }
